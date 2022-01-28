@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 
+//add public directiory
+app.use(express.static('public'));
 
 app.get('/user/:username', (req, res) => {
 
